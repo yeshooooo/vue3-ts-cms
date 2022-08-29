@@ -1,16 +1,17 @@
+// tsconfig.json
 {
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    "strict": true, // js/ts 混用时设为false
     "jsx": "preserve",
+    "importHelpers": true,
     "moduleResolution": "node",
-    "skipLibCheck": true,
+    "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
-    "useDefineForClassFields": true,
     "sourceMap": true,
+    "noImplicitThis": true, // js/ts 混用时设为false
     "baseUrl": ".",
     "types": ["webpack-env"],
     "paths": {
@@ -22,8 +23,8 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "src",
+    "src/typings/*.d.ts"
   ],
   "exclude": ["node_modules"]
 }
