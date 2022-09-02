@@ -16,6 +16,7 @@ module.exports = {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
     // 根据提示关闭的某些警告
+    "@typescript-eslint/no-var-requires": "off",
     "@typescript-eslint/no-explicit-any": "off",
   },
 };
